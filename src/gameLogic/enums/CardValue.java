@@ -13,7 +13,7 @@ public enum CardValue {
     J(11),
     Q(11),
     K(11),
-    A(0); // Could be 11 or 1
+    A(11); // Could be 11 or 1
 
     public final int value;
 
