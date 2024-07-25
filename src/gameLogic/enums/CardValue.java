@@ -10,9 +10,9 @@ public enum CardValue {
     OITO(8),
     NOVE(9),
     DEZ(10),
-    J(11),
-    Q(11),
-    K(11),
+    J(10),
+    Q(10),
+    K(10),
     A(11); // Could be 11 or 1
 
     public final int value;
