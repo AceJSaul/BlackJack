@@ -46,16 +46,17 @@ public abstract class Player {
 
     protected void addCardToHand(Carta carta){
         cardsOfPlayer.add(carta);
+        checkHandValue();
     }
 
     protected void hit(Baralho baralho){
         Carta cartaPuxada = baralho.drawCard();
         addCardToHand(cartaPuxada);
         numberOfCards+=1;
-        checkHandValue();
     }
 
-    protected boolean stand(){
-        return true;
+    protected void clearDeck(){
+        cardsOfPlayer.clear();
     }
+
 }

@@ -16,7 +16,7 @@ public class Dealer extends Player{
         return baralhos;
     }
 
-    private void getFirstHand(){
+    protected void getFirstHand(){
         this.cardsOfPlayer.add(baralhos.getLast().drawCard()); // Two first cards of dealer
         this.cardsOfPlayer.add(baralhos.getLast().drawCard());
         checkHandValue();
@@ -53,6 +53,6 @@ public class Dealer extends Player{
 
     @Override
     public String toString(){
-        return valueOfHand + "\n" + cardsOfPlayer;
+        return "value: " + valueOfHand + ", cards: " + cardsOfPlayer;
     }
 }
